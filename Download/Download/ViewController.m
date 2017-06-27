@@ -62,13 +62,13 @@
     //    }];
 }
 - (IBAction)pause:(id)sender {
-    [[DownLoaderManager shareInstance]pauseWithURL:@""];
+    [[DownLoaderManager shareInstance]pauseWithURL:[NSURL  URLWithString:@""]];
 }
 - (IBAction)cancel:(id)sender {
-    [[DownLoaderManager shareInstance] cancelWithURL:@""];
+    [[DownLoaderManager shareInstance] cancelWithURL:[NSURL  URLWithString:@""]];
 }
 - (IBAction)cancelClean:(id)sender {
-    [[DownLoaderManager shareInstance] cleanWithURL:@""];
+    [[DownLoaderManager shareInstance] cleanWithURL:[NSURL  URLWithString:@""]];
 }
 
 
